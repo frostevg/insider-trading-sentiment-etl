@@ -1,21 +1,4 @@
-# Insider Trading News Sentiment ETL
-
-This project combines **insider trading activity** with **news sentiment analysis** to assess the context around insider stock purchases.
-
-Given a file of insider trades, the pipeline:
-1. Reads insider trade records (ticker, insider, date, transaction details)
-2. Fetches news headlines around the trade date for each ticker (via NewsAPI.org)
-3. Calculates a sentiment score for the headlines (using VADER sentiment analysis)
-4. Outputs an enriched dataset with sentiment score and label (positive / neutral / negative)
-
-This is a portfolio project to demonstrate real-world **data engineering + analytics** skills:
-- API integration
-- ETL with Python and pandas
-- Text sentiment analysis
-- Config management with `.env`
-- Clean project & GitHub structure
-
----
+This project collects insider trading data from a public API, retrieves company news headlines, performs sentiment analysis using VADER, and outputs a combined dataset showing insider buy activity alongside sentiment scores. The pipeline is written in Python and uses Pandas, Requests, and NLTK for data processing. Environment variables are managed with python-dotenv, and results are stored locally as CSV for future analysis, reporting, or dashboard development. This repository demonstrates API integration, ETL design, and basic NLP sentiment processing.
 
 ## Project Structure
 
